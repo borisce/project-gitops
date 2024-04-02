@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: ambulance-ufe-container # meno kontaineru - v pod-e ich môže byť viac
-        image: boriscernak/ambulance-ufe
+        image: boriscernak/project-ufe
         imagePullPolicy: Always
 
         ports:
