@@ -10,3 +10,6 @@ commonLabels:
 
 resources:
 - ../../../apps/boriscernak-ambulance-ufe
+
+components:
+ - ../../../components/version-developers
