@@ -10,6 +10,3 @@ commonLabels:
 
 resources:
 - ../../../apps/boce-wac-project
-
-components:
- - ../../../components/version-developers
