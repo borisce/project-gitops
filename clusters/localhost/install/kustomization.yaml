@@ -9,7 +9,7 @@ commonLabels:
   app.kubernetes.io/part-of: wac-hospital
 
 resources:
-- ../../../apps/boriscernak-ambulance-ufe
+- ../../../apps/boce-wac-project
 
 components:
  - ../../../components/version-developers

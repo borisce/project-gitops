@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: boriscernak-ambulance-ufe-deployment      # meno deployment-u od ktorého sa odvádza meno podu
+  name: boce-wac-project-deployment      # meno deployment-u od ktorého sa odvádza meno podu
 spec:
   replicas: 2
   selector:
     matchLabels:
-        pod: boriscernak-ambulance-ufe-label    # tento riadok je len označenie štítku
+        pod: boce-wac-project-label    # tento riadok je len označenie štítku
                                     # key-value pair pod=ambualnce ufe
                                     # určený pre výber podov s rovnakým štítkom
   template:                    # šablóna pre vytvorenie replík podov
     metadata:
       labels:
-        pod: boriscernak-ambulance-ufe-label    # štítky podu
+        pod: boce-wac-project-label    # štítky podu
     spec:
       containers:
-      - name: ambulance-ufe-container # meno kontaineru - v pod-e ich môže byť viac
-        image: boriscernak/project-ufe
+      - name: wac-project-container # meno kontaineru - v pod-e ich môže byť viac
+        image: boriscernak/wac-project
         imagePullPolicy: Always
 
         ports:
